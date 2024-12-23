@@ -9,6 +9,7 @@ import AnimalsTop from "./routes/AnimalsTop.jsx";
 import Cat from "./routes/Cat.jsx";
 import Dog from "./routes/Dog.jsx";
 import Animals from "./routes/Animals.jsx";
+import Page from "./routes/Page.jsx";
 
 createRoot(document.getElementById("root")).render(
 	<BrowserRouter>
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")).render(
 		<Routes>
 			<Route index element={<Home />} />
 			<Route path="/notes" element={<Notes />} />
+			<Route path="/notes/:id" element={<Page />} />
 			<Route path="/dashboard" element={<DashBoard />} />
 			<Route path="/*" element={<NotFound />} />
 			<Route path="/animals" element={<Animals />}>
