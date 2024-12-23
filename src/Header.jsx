@@ -12,6 +12,9 @@ function Header() {
 			<Link to="/dashboard" style={linkStyle}>
 				Dashboard
 			</Link>
+			<Link to="/animals" style={linkStyle}>
+				Animals
+			</Link>
 		</nav>
 	);
 }
